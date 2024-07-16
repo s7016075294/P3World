@@ -23,40 +23,169 @@
         h2 {
             text-align: center;
         }
+        input[type="text"], input[type="date"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
     <h2>USA Visa Application Form</h2>
-    <form action="/submit" method="post">
+    <form action="https://formspree.io/f/{your_form_id}" method="post">
         <table>
             <tr>
-                <th>Information</th>
-                <th>Main Applicant</th>
-                <th>Member-1</th>
-                <th>Member-2</th>
+                <th colspan="4">PERSONAL INFORMATION</th>
             </tr>
             <tr>
                 <td>Surnames</td>
-                <td><input type="text" name="main_applicant_surname" required></td>
-                <td><input type="text" name="member1_surname" required></td>
-                <td><input type="text" name="member2_surname" required></td>
+                <td colspan="3"><input type="text" name="surnames" required></td>
             </tr>
             <tr>
                 <td>Given Names</td>
-                <td><input type="text" name="main_applicant_given_name" required></td>
-                <td><input type="text" name="member1_given_name" required></td>
-                <td><input type="text" name="member2_given_name" required></td>
+                <td colspan="3"><input type="text" name="given_names" required></td>
             </tr>
             <tr>
                 <td>Any Other Name (Before Marriage Name)</td>
-                <td><input type="text" name="main_applicant_other_name"></td>
-                <td><input type="text" name="member1_other_name"></td>
-                <td><input type="text" name="member2_other_name"></td>
+                <td colspan="3"><input type="text" name="other_name"></td>
             </tr>
-            <!-- Add more rows as necessary based on the Excel structure -->
-        </table>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-</body>
-</html>
+            <tr>
+                <td>Marital Status</td>
+                <td colspan="3"><input type="text" name="marital_status" required></td>
+            </tr>
+            <tr>
+                <td>Date Of Birth</td>
+                <td colspan="3"><input type="date" name="dob" required></td>
+            </tr>
+            <tr>
+                <td>Place Of Birth</td>
+                <td colspan="3"><input type="text" name="pob" required></td>
+            </tr>
+            <tr>
+                <th colspan="4">TRAVEL INFORMATION</th>
+            </tr>
+            <tr>
+                <td>Date Of Arrival In U.S.</td>
+                <td colspan="3"><input type="date" name="arrival_date_us" required></td>
+            </tr>
+            <tr>
+                <td>Place Of Arrival In U.S.</td>
+                <td colspan="3"><input type="text" name="arrival_place_us" required></td>
+            </tr>
+            <tr>
+                <td>Date Of Departure From U.S.</td>
+                <td colspan="3"><input type="date" name="departure_date_us" required></td>
+            </tr>
+            <tr>
+                <td>Place Of Departure From U.S.</td>
+                <td colspan="3"><input type="text" name="departure_place_us" required></td>
+            </tr>
+            <tr>
+                <td>Locations You Plan To Visit In The U.S</td>
+                <td colspan="3"><input type="text" name="us_locations" required></td>
+            </tr>
+            <tr>
+                <td>Address Where You Will Stay In The U.S.</td>
+                <td colspan="3"><input type="text" name="us_stay_address" required></td>
+            </tr>
+            <tr>
+                <th colspan="4">PERSON/ENTITY PAYING FOR YOUR TRIP</th>
+            </tr>
+            <tr>
+                <td>Surnames</td>
+                <td colspan="3"><input type="text" name="payer_surname" required></td>
+            </tr>
+            <tr>
+                <td>Given Names</td>
+                <td colspan="3"><input type="text" name="payer_given_name" required></td>
+            </tr>
+            <tr>
+                <td>Telephone Number</td>
+                <td colspan="3"><input type="tel" name="payer_phone" required></td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td colspan="3"><input type="email" name="payer_email" required></td>
+            </tr>
+            <tr>
+                <td>Relation</td>
+                <td colspan="3"><input type="text" name="payer_relation" required></td>
+            </tr>
+            <tr>
+                <th colspan="4">TRAVEL COMPANIONS INFORMATION</th>
+            </tr>
+            <tr>
+                <td>Persons Traveling With You</td>
+                <td colspan="3"><input type="text" name="travel_companions" required></td>
+            </tr>
+            <tr>
+                <td>Enter The Name Of The Group You Are Traveling</td>
+                <td colspan="3"><input type="text" name="group_name"></td>
+            </tr>
+            <tr>
+                <th colspan="4">PREVIOUS U.S. TRAVEL INFORMATION</th>
+            </tr>
+            <tr>
+                <td>Have You Ever Applied For A U.S. Visa?</td>
+                <td><input type="radio" name="applied_visa" value="YES" required> YES</td>
+                <td><input type="radio" name="applied_visa" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Purpose Of Applied</td>
+                <td colspan="3"><input type="text" name="purpose_applied"></td>
+            </tr>
+            <tr>
+                <td>Have You Ever Been Issued A U.S. Visa?</td>
+                <td><input type="radio" name="issued_visa" value="YES" required> YES</td>
+                <td><input type="radio" name="issued_visa" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Type Of Visa Approved</td>
+                <td colspan="3"><input type="text" name="type_visa_approved"></td>
+            </tr>
+            <tr>
+                <td>Visa Issue Month/Year</td>
+                <td colspan="3"><input type="text" name="visa_issue_date"></td>
+            </tr>
+            <tr>
+                <td>Visa Valid Till Month/Year</td>
+                <td colspan="3"><input type="text" name="visa_valid_till"></td>
+            </tr>
+            <tr>
+                <td>Visa Number</td>
+                <td colspan="3"><input type="text" name="visa_number"></td>
+            </tr>
+            <tr>
+                <td>Applying For Same Visa</td>
+                <td><input type="radio" name="same_visa" value="YES" required> YES</td>
+                <td><input type="radio" name="same_visa" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Applying For Same Place</td>
+                <td><input type="radio" name="same_place" value="YES" required> YES</td>
+                <td><input type="radio" name="same_place" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Any Previous Visa Lost Or Cancelled</td>
+                <td><input type="radio" name="visa_lost" value="YES" required> YES</td>
+                <td><input type="radio" name="visa_lost" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Have You Ever Been Refused A U.S. Visa, Or Been Refused Admission To The United States, Or Withdrawn Your Application For Admission At The Port Of Entry?</td>
+                <td><input type="radio" name="visa_refused" value="YES" required> YES</td>
+                <td><input type="radio" name="visa_refused" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Reason For The Refusal</td>
+                <td colspan="3"><input type="text" name="refusal_reason"></td>
+            </tr>
+            <tr>
+                <td>Refusal Month/Year</td>
+                <td colspan="3"><input type="text" name="refusal_date"></td>
+            </tr>
+            <tr>
+                <td>Have You Ever Been In The U.S.?</td>
+                <td><input type="radio" name="been_in_us" value="YES" required> YES</td>
+                <td><input type="radio" name="been_in_us" value="NO" required> NO</td>
+            </tr>
+           
