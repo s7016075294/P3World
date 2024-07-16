@@ -188,4 +188,285 @@
                 <td><input type="radio" name="been_in_us" value="YES" required> YES</td>
                 <td><input type="radio" name="been_in_us" value="NO" required> NO</td>
             </tr>
+            <tr>
+                <td>Date Of Arrival In U.S.</td>
+                <td colspan="3"><input type="date" name="arrival_date_us_previous"></td>
+            </tr>
+            <tr>
+                <td>Duration Of Stay</td>
+                <td colspan="3"><input type="text" name="duration_stay"></td>
+            </tr>
+            <tr>
+                <td>Purpose Of Tour</td>
+                <td colspan="3"><input type="text" name="tour_purpose"></td>
+            </tr>
+            <tr>
+                <td>Has Anyone Ever Filed An Immigrant Petition On Your Behalf With The United States Citizenship And Immigration Services?</td>
+                <td><input type="radio" name="immigrant_petition" value="YES" required> YES</td>
+                <td><input type="radio" name="immigrant_petition" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Type Of Petition File (Relative/ Eb 5 Etc)</td>
+                <td colspan="3"><input type="text" name="petition_type"></td>
+            </tr>
+            <tr>
+                <td>Submission Receipt Number</td>
+                <td colspan="3"><input type="text" name="receipt_number"></td>
+            </tr>
+            <tr>
+                <td>Date Of Application</td>
+                <td colspan="3"><input type="date" name="application_date"></td>
+            </tr>
+            <tr>
+                <td>Current Status Of Application</td>
+                <td colspan="3"><input type="text" name="application_status"></td>
+            </tr>
+            <tr>
+                <th colspan="4">ADDRESS AND PHONE INFORMATION</th>
+            </tr>
+            <tr>
+                <td>Home Address</td>
+                <td colspan="3"><input type="text" name="home_address" required></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td colspan="3"><input type="tel" name="phone" required></td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td colspan="3"><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Social Media Account Link</td>
+                <td colspan="3"><input type="text" name="social_media"></td>
+            </tr>
+            <tr>
+                <th colspan="4">PASSPORT DETAIL</th>
+            </tr>
+            <tr>
+                <td>Passport/Travel Document Number</td>
+                <td colspan="3"><input type="text" name="passport_number" required></td>
+            </tr>
+            <tr>
+                <td>Issue Place</td>
+                <td colspan="3"><input type="text" name="issue_place" required></td>
+            </tr>
+            <tr>
+                <td>Issue Date</td>
+                <td colspan="3"><input type="date" name="issue_date" required></td>
+            </tr>
+            <tr>
+                <td>Expiration Date</td>
+                <td colspan="3"><input type="date" name="expiration_date" required></td>
+            </tr>
+            <tr>
+                <td>Lost Or Stolen Passport Detail If Have</td>
+                <td colspan="3"><input type="text" name="lost_passport"></td>
+            </tr>
+            <tr>
+                <th colspan="4">U.S. POINT OF CONTACT INFORMATION</th>
+            </tr>
+            <tr>
+                <td>Name Of Contact Person Or Organization In The United States</td>
+                <td colspan="3"><input type="text" name="us_contact_name" required></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td colspan="3"><input type="text" name="us_contact_address" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td colspan="3"><input type="email" name="us_contact_email" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td colspan="3"><input type="tel" name="us_contact_phone" required></td>
+            </tr>
+            <tr>
+                <th colspan="4">FAMILY INFORMATION: RELATIVES</th>
+            </tr>
+            <tr>
+                <td>Father's Full Name</td>
+                <td colspan="3"><input type="text" name="father_name" required></td>
+            </tr>
+            <tr>
+                <td>Date Of Birth</td>
+                <td colspan="3"><input type="date" name="father_dob" required></td>
+            </tr>
+            <tr>
+                <td>Mother's Full Name</td>
+                <td colspan="3"><input type="text" name="mother_name" required></td>
+            </tr>
+            <tr>
+                <td>Date Of Birth</td>
+                <td colspan="3"><input type="date" name="mother_dob" required></td>
+            </tr>
+            <tr>
+                <td>Father Or Mother In The Usa?</td>
+                <td><input type="radio" name="parent_in_usa" value="YES" required> YES</td>
+                <td><input type="radio" name="parent_in_usa" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Do You Have Any Immediate Relatives, Not Including Parents, In The United States?</td>
+                <td><input type="radio" name="immediate_relative" value="YES" required> YES</td>
+                <td><input type="radio" name="immediate_relative" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Name Of Immediate Relative</td>
+                <td colspan="3"><input type="text" name="immediate_relative_name"></td>
+            </tr>
+            <tr>
+                <td>Address Of Immediate Relative</td>
+                <td colspan="3"><input type="text" name="immediate_relative_address"></td>
+            </tr>
+            <tr>
+                <td>Contact Number Of Immediate Relative</td>
+                <td colspan="3"><input type="tel" name="immediate_relative_phone"></td>
+            </tr>
+            <tr>
+                <td>Email Id Of Immediate Relative</td>
+                <td colspan="3"><input type="email" name="immediate_relative_email"></td>
+            </tr>
+            <tr>
+                <td>Immediate Relative's Immigration Status</td>
+                <td colspan="3"><input type="text" name="immediate_relative_status"></td>
+            </tr>
+            <tr>
+                <td>Relation With You</td>
+                <td colspan="3"><input type="text" name="immediate_relative_relation"></td>
+            </tr>
+            <tr>
+                <td>Do You Have Any Other Relatives In The United States?</td>
+                <td><input type="radio" name="other_relative" value="YES" required> YES</td>
+                <td><input type="radio" name="other_relative" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Name Of Other Relative</td>
+                <td colspan="3"><input type="text" name="other_relative_name"></td>
+            </tr>
+            <tr>
+                <td>Address Of Other Relative</td>
+                <td colspan="3"><input type="text" name="other_relative_address"></td>
+            </tr>
+            <tr>
+                <td>Contact Number Of Other Relative</td>
+                <td colspan="3"><input type="tel" name="other_relative_phone"></td>
+            </tr>
+            <tr>
+                <td>Email Id Of Other Relative</td>
+                <td colspan="3"><input type="email" name="other_relative_email"></td>
+            </tr>
+            <tr>
+                <th colspan="4">SPOUSE'S DETAIL</th>
+            </tr>
+            <tr>
+                <td>Spouse's Date Of Birth</td>
+                <td colspan="3"><input type="date" name="spouse_dob" required></td>
+            </tr>
+            <tr>
+                <td>Spouse's Place Of Birth</td>
+                <td colspan="3"><input type="text" name="spouse_pob" required></td>
+            </tr>
+            <tr>
+                <td>Spouse's Address</td>
+                <td colspan="3"><input type="text" name="spouse_address" required></td>
+            </tr>
+            <tr>
+                <th colspan="4">PRESENT WORK/EDUCATION/TRAINING INFORMATION</th>
+            </tr>
+            <tr>
+                <td>Primary Occupation</td>
+                <td colspan="3"><input type="text" name="primary_occupation" required></td>
+            </tr>
+            <tr>
+                <td>Present Employer Name</td>
+                <td colspan="3"><input type="text" name="employer_name" required></td>
+            </tr>
+            <tr>
+                <td>Present Employer Address</td>
+                <td colspan="3"><input type="text" name="employer_address" required></td>
+            </tr>
+            <tr>
+                <td>Salary</td>
+                <td colspan="3"><input type="text" name="salary" required></td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td colspan="3"><input type="text" name="duration" required></td>
+            </tr>
+            <tr>
+                <td>Explain Your Work</td>
+                <td colspan="3"><input type="text" name="work_explanation" required></td>
+            </tr>
+            <tr>
+                <td>Past Work Experience</td>
+                <td colspan="3"><input type="text" name="past_experience"></td>
+            </tr>
+            <tr>
+                <td>Highest Level Of Education</td>
+                <td colspan="3"><input type="text" name="education_level" required></td>
+            </tr>
+            <tr>
+                <th colspan="4">PREVIOUS WORK AND EDUCATION</th>
+            </tr>
+            <tr>
+                <td>Have You Attended Any Institutions Other Than Elementary Schools?</td>
+                <td><input type="radio" name="attended_institutions" value="YES" required> YES</td>
+                <td><input type="radio" name="attended_institutions" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Name Of Institutions</td>
+                <td colspan="3"><input type="text" name="institution_names"></td>
+            </tr>
+            <tr>
+                <td>Course Of Study</td>
+                <td colspan="3"><input type="text" name="course_study"></td>
+            </tr>
+            <tr>
+                <td>Address Of Institutions</td>
+                <td colspan="3"><input type="text" name="institution_address"></td>
+            </tr>
+            <tr>
+                <td>Duration Of Study</td>
+                <td colspan="3"><input type="text" name="study_duration"></td>
+            </tr>
+            <tr>
+                <th colspan="4">ADDITIONAL WORK/EDUCATION/TRAINING INFORMATION</th>
+            </tr>
+            <tr>
+                <td>List All Languages You Speak And/Or Read</td>
+                <td colspan="3"><input type="text" name="languages"></td>
+            </tr>
+            <tr>
+                <td>Have You Traveled To Any Countries Within The Last Five Years?</td>
+                <td><input type="radio" name="traveled_countries" value="YES" required> YES</td>
+                <td><input type="radio" name="traveled_countries" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Name Of Countries Visited</td>
+                <td colspan="3"><input type="text" name="countries_visited"></td>
+            </tr>
+            <tr>
+                <td>Have You Belonged To, Contributed To, Or Worked For Any Professional, Social, Or Charitable Organization?</td>
+                <td><input type="radio" name="organization_work" value="YES" required> YES</td>
+                <td><input type="radio" name="organization_work" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Explain</td>
+                <td colspan="3"><input type="text" name="organization_explanation"></td>
+            </tr>
+            <tr>
+                <td>Do You Have Any Specialized Skills Or Training, Including Firearms, Explosives, Nuclear, Biological, Or Chemical Experience?</td>
+                <td><input type="radio" name="special_skills" value="YES" required> YES</td>
+                <td><input type="radio" name="special_skills" value="NO" required> NO</td>
+            </tr>
+            <tr>
+                <td>Explain</td>
+                <td colspan="3"><input type="text" name="skills_explanation"></td>
+            </tr>
+            <tr>
+                <td>Have You Ever Served In The Military?</td>
+                <td><input type="radio" name="served_military" value="YES" required> YES</td>
+                <td><input type="radio" name="served_military" value="NO" required> NO</td>
+            </tr>
            
